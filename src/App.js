@@ -37,7 +37,7 @@ function App() {
           <h2>Level {stats.global.level}</h2>
           <div className="condition">
               
-              <h3>{stats.legends.selected.data[0].value} Kills! </h3>
+              <h3>{stats.legends.selected.data[0].value} Kills </h3>
               <h3>{stats.realtime.currentState}</h3>
               <h3>{stats.total.kd.value} KD</h3>
             <img src={stats.legends.selected.ImgAssets.icon} alt="" />
