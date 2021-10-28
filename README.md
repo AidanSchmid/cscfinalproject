@@ -1,6 +1,8 @@
 # Project Requirements
-The project is made using react and bootstrap
-In order to get the project to run react will need to be installed as well as the react version of bootstrap 
+The project is made using react and bootstrap.
+In order to get the project to run react will need to be installed as well as the react version of bootstrap.
+Link to React https://reactjs.org/
+Link to Bootsrap React https://react-bootstrap.netlify.app/getting-started/introduction/
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
