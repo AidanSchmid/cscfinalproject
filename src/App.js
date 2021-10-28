@@ -2,14 +2,15 @@ import React, { useEffect, useState} from "react"
 import './App.css';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Nav, } from "react-bootstrap";
+import Nav from "react-bootstrap/Nav";
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import Card from 'react-bootstrap/Card'
+import Card from 'react-bootstrap/Card' 
 function App() {
   const [stats, setStats] = useState(null);
   const [platform, setConsole] = useState(" ");
   const [input, setInput] = useState(" ");
+  
   useEffect(() => {
     axios.get('https://api.mozambiquehe.re/bridge?version=5&platform=PS4&player=SpoiledMilkMan_&auth=Yw66EEZlFaVluqUR110c')
       .then(data => {
@@ -33,7 +34,6 @@ function App() {
   return (
   // add fixed-top make nav bar move
     <div>
-      
     <Nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="main-nav">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">StatTracker</a>
@@ -54,7 +54,7 @@ function App() {
         <div>
           <div className="home">
 
-            <Card style={{ width: '18rem' }}>
+  <Card  bg="dark"style={{ width: '18rem' }}>
   <Card.Body>
     <Card.Title>Input User Information</Card.Title>
     <Card.Text>
@@ -64,19 +64,20 @@ function App() {
           <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Console</Form.Label>
-              <Form.Select onChange={consoleInput}aria-label="Default select example">
+              <Form.Select onChange={consoleInput} aria-label="Default select example">
                 <option>Console Selection</option>
                 <option value="PS4">Playstation</option>
-                <option value="2">PC</option>
-                <option value="3">XBOX</option>
+                <option value="PC">PC</option>
+                <option value="XBOX">XBOX</option>
               </Form.Select>
-        </Form.Group>
-  <Form.Group onChange={statsInput}className="mb-3" controlId="formBasicPassword">
+                  </Form.Group>
+                  
+  <Form.Group onChange={statsInput} className="mb-3" controlId="formBasicPassword">
     <Form.Label>Username</Form.Label>
     <Form.Control type="text" placeholder="Username" />
   </Form.Group>
   
-  <Button onClick={searchStats} variant="primary" type="submit">
+  <Button onClick={searchStats} variant="secondary" type="button">
     Submit
   </Button>
 </Form>
