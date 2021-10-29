@@ -11,7 +11,7 @@ function App() {
   const [stats, setStats] = useState(null);
   const [platform, setConsole] = useState(" ");
   const [input, setInput] = useState(" ");
-  // https://apex-weapon-api.herokuapp.com/v1/guns 
+  // https://apex-weapon-api.herokuapp.com/v1/guns  
   useEffect(() => {
     axios.get('https://api.mozambiquehe.re/bridge?version=5&platform=PS4&player=SpoiledMilkMan_&auth=Yw66EEZlFaVluqUR110c')
       .then(data => {
