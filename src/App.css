@@ -1,7 +1,11 @@
 .home{
   padding-top: 55px;
+  background: url(./img/home_screen.jpg);
   background-color: grey;
-  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 900px;
 }
 .character-info{
   padding-top: 60px;
@@ -9,7 +13,13 @@
 .stats{
   color: aliceblue;
   background-color: rgb(36, 36, 36);
+  text-align: center;
 }
 .card{
+
   color: white;
+  position: fixed;
+  right: -1100px;
+  top: 250px;
 }
+html { scroll-behavior: smooth;}
