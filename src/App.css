@@ -1,25 +1,67 @@
-.home{
+.home {
   padding-top: 55px;
   background: url(./img/home_screen.jpg);
   background-color: grey;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
-  min-height: 900px;
+  min-height: 1100px;
+  overflow: hidden;
 }
-.character-info{
+.cod {
+  padding-top: 70px;
+  background: url(./img/cod.png);
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 1100px;
+  overflow: hidden;
+}
+.character-info {
   padding-top: 60px;
 }
-.stats{
+.stats {
+  padding-top: 20px;
   color: aliceblue;
   background-color: rgb(36, 36, 36);
   text-align: center;
 }
-.card{
-
-  color: white;
-  position: fixed;
-  right: -1100px;
-  top: 250px;
+.condition {
+  padding-bottom: 100px;
 }
-html { scroll-behavior: smooth;}
+.row {
+  padding-top: 15%;
+}
+.card {
+  color: aliceblue;
+}
+
+#guns {
+  color: black;
+}
+
+.camos {
+  overflow: hidden;
+  padding: 20px;
+  padding-top: 60px;
+}
+#small {
+  width: 200px;
+}
+#lists {
+  background: rgb(36, 36, 36);
+}
+.card-img-sm {
+  padding: 1px;
+  filter: brightness(150%);
+}
+
+.slideshow {
+  background: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
