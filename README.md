@@ -1,3 +1,8 @@
+# Project Outline
+This is my semester long project for CSC 375
+The project is a stat tracking web application for the games APEX Legends and Call of Duty.
+The Project was made using react and react bootstrap the links to both of these will be placed below.  
+To run the project you simply to type npm start in the console in order to run it.
 # Project Specifications
 The project is made using react and bootstrap.
 
